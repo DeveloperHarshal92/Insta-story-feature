@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  width: 300px;
+  height: 600px;
+  background-color: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid #333;
+  position: relative;
+}
+
+#storiyan {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #555;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#storiyan::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  width: 90px;
+  height: 90px;
+  padding: 3px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.story:hover {
+    transform: scale(1.1) 0.1ms;
+  }
+
+.story img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%; 
+  border: 2px solid #111;
+}
+
+#full-screen {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: none;
+  border-radius: 20px; 
+  border: 12px solid; 
+  border-image: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) 1; 
+ 
+}
